@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b308a650-618d-4d5c-aff4-f76b3ce0118f" name="Changes" comment="" />
+    <list default="true" id="b308a650-618d-4d5c-aff4-f76b3ce0118f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/line.g4" beforeDir="false" afterPath="$PROJECT_DIR$/line.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,39 +36,15 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/nodejs/antlr-4.10.1-complete.jar",
+    "last_opened_file_path": "$PROJECT_DIR$",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "File.Encoding"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="nodejs" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="org.antlr.v4.gui.TestRig" />
-      <module name="nodejs" />
-      <option name="PROGRAM_PARAMETERS" value="line prog -gui ../source.txt" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="compile" type="JarApplication">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/antlr-4.10.1-complete.jar" />
-      <option name="PROGRAM_PARAMETERS" value="-package generated ../../line.g4" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/generated" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JAR Application.compile">
     <list>
-      <item itemvalue="Application.test" />
       <item itemvalue="Application.Main" />
       <item itemvalue="JAR Application.compile" />
     </list>
@@ -79,16 +59,5 @@
       <updated>1651363492622</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
