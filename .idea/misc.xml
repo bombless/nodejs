@@ -6,8 +6,8 @@
         <PerGrammarGenerationSettings>
           <option name="fileName" value="$PROJECT_DIR$/line.g4" />
           <option name="autoGen" value="true" />
-          <option name="outputDir" value="D:\nodejs\out" />
-          <option name="libDir" value="D:\nodejs" />
+          <option name="outputDir" value="$PROJECT_DIR$/out" />
+          <option name="libDir" value="$PROJECT_DIR$" />
           <option name="encoding" value="" />
           <option name="pkg" value="" />
           <option name="language" value="" />
