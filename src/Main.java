@@ -1,25 +1,25 @@
-import generated.lineBaseListener;
-import generated.lineParser;
+import generated.progBaseListener;
+import generated.progParser;
 import org.antlr.v4.runtime.*;
 
 import java.io.IOException;
 
-import generated.lineLexer;
+import generated.progLexer;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         CharStream stream = CharStreams.fromFileName("source.txt");
-        lineLexer lexer = new lineLexer(stream);
+        progLexer lexer = new progLexer(stream);
         CommonTokenStream tokenStream = new CommonTokenStream(lexer);
-        lineParser parser = new lineParser(tokenStream);
-        for (lineParser.LineContext line: parser.prog().line()) {
-            line.exitRule(new lineBaseListener() {
+        progParser parser = new progParser(tokenStream);
+        for (progParser.LineContext line: parser.prog().line()) {
+            line.exitRule(new progBaseListener() {
                 @Override
-                public void exitNpmCommand(lineParser.NpmCommandContext ctx) {
+                public void exitNpmCommand(progParser.NpmCommandContext ctx) {
                     parseNpmCommand(ctx);
                 }
             });
-            lineParser.NpmCommandContext npmCommand = line.npmCommand();
+            progParser.NpmCommandContext npmCommand = line.npmCommand();
             if (null != npmCommand) {
                 parseNpmCommand(npmCommand);
             } else {
@@ -29,16 +29,16 @@ public class Main {
         }
     }
 
-    private static void parseNpmCommand(lineParser.NpmCommandContext npmCommand) {
+    private static void parseNpmCommand(progParser.NpmCommandContext npmCommand) {
         System.out.println("执行npm命令");
-        for (lineParser.FragContext frag: npmCommand.frag()) {
+        for (progParser.FragContext frag: npmCommand.frag()) {
             String text = frag.EXPR().getSymbol().getText();
             System.out.println(text);
         }
     }
 
-    private static void parseJavascript(lineParser.LineContext line) {
-        for (lineParser.FragContext frag: line.frag()) {
+    private static void parseJavascript(progParser.LineContext line) {
+        for (progParser.FragContext frag: line.frag()) {
             String text = frag.EXPR().getSymbol().getText();
             System.out.println(text);
         }
