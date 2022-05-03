@@ -1,8 +1,8 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="compile-test" type="JarApplication">
     <option name="JAR_PATH" value="$PROJECT_DIR$/antlr-4.10.1-complete.jar" />
-    <option name="PROGRAM_PARAMETERS" value="-o . ../prog.g4" />
-    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+    <option name="PROGRAM_PARAMETERS" value="-o test Prog.g4" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     <option name="ALTERNATIVE_JRE_PATH" />
     <method v="2" />
   </configuration>

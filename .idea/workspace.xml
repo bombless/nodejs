@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b308a650-618d-4d5c-aff4-f76b3ce0118f" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/compile_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/compile_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/compile_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/compile_test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/compile_test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/compile_test_before_run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/compile_test_before_run.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/test.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nodejs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nodejs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prog.g4" beforeDir="false" afterPath="$PROJECT_DIR$/Prog.g4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +46,19 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="IntelliLang.Advanced" />
   </component>
-  <component name="RunManager" selected="JAR Application.compile-test">
+  <component name="RunManager" selected="Application. main">
+    <configuration name="test" type="Application" factoryName="Application">
+      <envs>
+        <env name="CLASSPATH" value="." />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="org.antlr.v4.gui.TestRig" />
+      <module name="nodejs" />
+      <option name="PROGRAM_PARAMETERS" value="Prog prog -gui ../source.txt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application. main" />
       <item itemvalue="Application.test" />
@@ -77,5 +88,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
